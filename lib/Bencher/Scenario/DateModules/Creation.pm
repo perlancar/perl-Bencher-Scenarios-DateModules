@@ -32,6 +32,11 @@ our $scenario = {
             name => 'Time::Local::timelocal',
             fcall_template => 'Time::Local::timelocal(0, 0, 0, 19, 4-1, 2016-1900)',
         },
+
+        {
+            name => 'Time::Piece::localtime',
+            fcall_template => 'Time::Piece::localtime()',
+        },
     ],
     include_result_size => 1,
     datasets => [
@@ -40,3 +45,9 @@ our $scenario = {
 
 1;
 # ABSTRACT:
+
+=head1 BENCHMARK NOTES
+
+Time::Moment is the fastest. It also produces a very compact object (second only
+to Time::Local, which produces ints). In comparison, DateTime is relatively
+crazy big.
