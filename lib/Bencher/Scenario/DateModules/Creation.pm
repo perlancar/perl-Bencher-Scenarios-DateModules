@@ -39,8 +39,6 @@ our $scenario = {
         },
     ],
     include_result_size => 1,
-    datasets => [
-    ],
 };
 
 1;
