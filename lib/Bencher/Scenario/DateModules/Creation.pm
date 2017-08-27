@@ -58,3 +58,7 @@ our $scenario = {
 Time::Moment is the fastest. It also produces a very compact object (second only
 to Time::Local, which produces ints). In comparison, DateTime is relatively
 crazy big.
+
+DateTime::Tiny is an alternative for DateTime if you want smaller startup
+overhead and dependencies. It also creates date objects faster. But the object
+is still relatively large (a hash of date element fields).
