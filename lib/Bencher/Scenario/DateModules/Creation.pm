@@ -47,7 +47,7 @@ our $scenario = {
             fcall_template => 'Time::Piece::localtime()',
         },
     ],
-    include_result_size => 1,
+    with_result_size => 1,
 };
 
 1;
