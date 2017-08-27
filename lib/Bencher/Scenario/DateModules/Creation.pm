@@ -20,6 +20,15 @@ our $scenario = {
         },
 
         {
+            name => 'DateTime::Tiny->new(ymd)',
+            fcall_template => 'DateTime::Tiny->new(year=>2016, month=>4, day=>19)',
+        },
+        {
+            name => 'DateTime::Tiny->now',
+            fcall_template => 'DateTime::Tiny->now',
+        },
+
+        {
             name => 'Time::Moment->new(ymd)',
             fcall_template => 'Time::Moment->new(year=>2016, month=>4, day=>19)',
         },
