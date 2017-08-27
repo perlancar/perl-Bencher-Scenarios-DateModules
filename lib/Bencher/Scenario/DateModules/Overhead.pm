@@ -19,4 +19,5 @@ our $scenario = {
     ],
 };
 
+1;
 # ABSTRACT:
